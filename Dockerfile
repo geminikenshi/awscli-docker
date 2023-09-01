@@ -1,5 +1,5 @@
-From amazon/aws-cli:2.13.14
+FROM amazonlinux:2023
 
-RUN amazon-linux-extras install docker
+RUN yum install -y aws-cli docker
 
 CMD ["dockerd"]
